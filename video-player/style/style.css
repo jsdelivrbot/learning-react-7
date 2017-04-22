@@ -25,3 +25,12 @@
 .list-group-item:hover {
     background-color: #eee;
 }
+
+.loading-bar {
+    text-align: center;
+}
+
+.loading-bar img {
+    width: 50%;
+    margin-top: 50px;
+}

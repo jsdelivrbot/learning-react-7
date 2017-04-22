@@ -1,10 +1,14 @@
 import React from 'react';
+import LoadingBar from './loading_bar'
 
 const VideoDetail = ({video}) => {
     if(!video){
-        return <div>Loading...</div>;
+        return (
+            <LoadingBar/>
+        );
     }
 
+    console.dir(video);
     const videoId = video.id.videoId;
     const url = `https://www.youtube.com/embed/${videoId}`;
 
